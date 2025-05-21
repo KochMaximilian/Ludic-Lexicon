@@ -88,19 +88,19 @@ extra:
   social:
     - icon: fontawesome/solid/hand-peace
       link: https://maximiliankoch.at/
-      name: Portfolio Website
+      name: Maximilian's Portfolio Website
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/maximiliankochlinked/
-      name: LinkedIn Profile
+      name: Maximilian's LinkedIn Profile
     - icon: simple/itchdotio
       link: https://adistantdreamer.itch.io/
-      name: Itch.io Games
+      name: Maximilian's Itch.io Games
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@KochMaximilian
-      name: YouTube Channel
+      name: Maximilian's YouTube Channel
     - icon: fontawesome/brands/github
       link: https://github.com/KochMaximilian
-      name: GitHub Profile
+      name: Maximilian's GitHub Profile
 
 
 copyright: Copyright © 2025 Maximilian Koch
