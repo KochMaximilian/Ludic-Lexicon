@@ -45,7 +45,7 @@ Each analysis seeks to uncover what games teach us, consciously or unconsciously
 
 ![Maximilian Koch](assets/images/profile.webp){ align=right width="150" }
 
-**[Maximilian Koch](https://maximiliankoch.at/){:target="_blank"}** is a game designer and developer with a passion for analyzing and deconstructing game design elements. With experience in both theoretical game design and practical development, he created Ludic Lexicon as a platform to share insights and document the ongoing journey of learning game design through analytical play.
+**[Maximilian Koch](https://maximiliankoch.at/about){:target="_blank"}** is a game designer and developer with a passion for analyzing and deconstructing game design elements. With experience in both theoretical game design and practical development, he created Ludic Lexicon as a platform to share insights and document the ongoing journey of learning game design through analytical play.
 
 The project reflects a belief that every game, whether intentionally or not, functions as a teacher, and through careful study, we can extract valuable lessons about what engages, challenges, and delights players.
 
