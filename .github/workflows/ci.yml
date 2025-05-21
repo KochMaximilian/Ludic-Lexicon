@@ -14,16 +14,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout full repo history
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # full git history for git-committers plugin
+          fetch-depth: 0
 
-      - name: Configure Git
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-
-      - uses: actions/setup-python@v5
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v5
         with:
           python-version: 3.x
 
@@ -41,7 +38,7 @@ jobs:
       - name: Build MkDocs site
         run: mkdocs build
 
-      - name: Upload site artifact
+      - name: Upload built site for GitHub Pages
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./site
@@ -51,8 +48,8 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy-pages.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: deploy-pages
         uses: actions/deploy-pages@v3
