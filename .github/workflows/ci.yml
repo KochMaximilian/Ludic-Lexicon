@@ -11,16 +11,14 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout full repo history
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up Python 3.x
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
 
@@ -35,21 +33,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build MkDocs site
+      - name: Build site
         run: mkdocs build
 
-      - name: Upload built site for GitHub Pages
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./site
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy-pages.outputs.page_url }}
-    steps:
       - name: Deploy to GitHub Pages
-        id: deploy-pages
         uses: actions/deploy-pages@v3
