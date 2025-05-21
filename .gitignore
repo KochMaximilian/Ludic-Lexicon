@@ -1,7 +1,23 @@
-# Docusaurus generated files
-.docusaurus
-build/
-.cache-loader
+# MkDocs generated files
+site/
+
+# Python environment
+venv/
+.venv/
+env/
+.env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
 
 # Dependencies
 node_modules/
