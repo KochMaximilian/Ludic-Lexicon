@@ -1,0 +1,108 @@
+site_name: Ludic Lexicon
+site_url: https://lufic.github.io/lexicon/
+theme:
+  name: material
+  icon:
+    logo: material/gamepad-down
+    previous: material/gamepad-left
+    next: material/gamepad-right 
+  favicon: assets/favicon.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+  palette:
+# Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Toggle automatic light/dark mode
+    
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark Mode
+      primary: black
+      accent: amber
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light Mode
+      primary: white
+      accent: amber
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - search.highlight
+    - toc.integrate # optional
+    - search.suggest
+    - search.share
+    - navigation.indexes
+
+markdown_extensions:
+  - attr_list
+  - footnotes
+  - tables
+  - def_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-]+'
+      prebuild_index: true
+  - tags:
+  
+extra:
+  social:
+    - icon: fontawesome/solid/hand-peace
+      link: https://maximiliankoch.at/
+      name: Portfolio Website
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/maximiliankochlinked/
+      name: LinkedIn Profile
+    - icon: simple/itchdotio
+      link: https://adistantdreamer.itch.io/
+      name: Itch.io Games
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@KochMaximilian
+      name: YouTube Channel
+    - icon: fontawesome/brands/github
+      link: https://github.com/KochMaximilian
+      name: GitHub Profile
+
+
+copyright: Copyright © 2025 Maximilian Koch
+  
