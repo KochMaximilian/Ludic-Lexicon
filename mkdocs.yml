@@ -89,6 +89,10 @@ plugins:
       lang: en
       separator: '[\s\-]+'
   - tags:
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      enable_creation_date: true
+      type: date
   - git-committers:
       repository: KochMaximilian/Ludic-Lexicon
       branch: main
