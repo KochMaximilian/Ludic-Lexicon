@@ -2,4 +2,3 @@ mkdocs>=1.5.3
 mkdocs-material
 mkdocs-git-revision-date-localized-plugin
 mkdocs-git-committers-plugin
-mkdocs-tags-plugin
