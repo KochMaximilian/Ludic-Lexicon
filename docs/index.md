@@ -62,4 +62,4 @@ Have thoughts on game design or suggestions for this wiki? Reach out through any
 Your insights are welcome as this knowledge base evolves. Have a game you'd like to see analyzed? Let me know!
 
 !!! quote "Game Design Philosophy"
-    "That's what games are, in the end. Teachers. Fun is just another word for learning." — Raph Koster
+    "That's what games are, in the end. Teachers. — Raph Koster

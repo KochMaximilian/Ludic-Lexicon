@@ -82,7 +82,6 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-]+'
-      prebuild_index: true
   - tags:
   
 extra:
